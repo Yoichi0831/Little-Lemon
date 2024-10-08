@@ -46,21 +46,14 @@ class Header extends Component {
     }
 
     render() {
-        const { focused , handleInputFocus , handleInputBlur} = this.props;
+        const { focused , handleInputFocus , handleInputBlur } = this.props;
         return (
             <HeaderWrapper>
                 <Link to='/'>
                     <Logo/>
                 </Link>
-                
-                <Nav>
-                    <NavItem className='left active'>Homepage</NavItem>
-                    <NavItem className='left'>download</NavItem>
-                    <NavItem className='right'>log in</NavItem>
-                    <NavItem className='right'>
-                        <span className="iconfont">&#xe674;</span>
-                    </NavItem>
 
+                <Nav>
                     <SearchWrapper>
                         <CSSTransition
                             in={focused}
@@ -77,13 +70,6 @@ class Header extends Component {
                         {this.getListArea()}
                     </SearchWrapper>
 
-                    <Addition>
-                        <Button className="reg">register</Button>
-                        <Button className="writing">
-                            <span className="iconfont" >&#xe600;</span>
-                            write
-                        </Button>
-                    </Addition>
                 </Nav>
             </HeaderWrapper>
         )

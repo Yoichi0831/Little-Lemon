@@ -3,23 +3,23 @@ import './index.css';
 import { Provider } from 'react-redux';
 import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import Header from './common/header';
+import Footer from './common/footer';
 import Home from './pages/home';
 import Detail from './pages/detail';
-import Login from './pages/login';
-import Economy from './pages/economy';
+import Booking from './pages/booking';
+
 import store from './store';
 
 function App() {
   return (
-    <Provider store={store}> {/* provides data of store to inside components */}
+    <Provider store={store}>
       <BrowserRouter>
         <div>
           <Header />
           <Routes>
-            <Route path='/home' element={<Home />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/booking' element={<Booking />} />
             <Route path='/detail/:id' element={<Detail />} />
-            <Route path='/login' element={<Login />}/>
-            <Route path='/' element={<Economy />}/>
           </Routes>
         </div>
       </BrowserRouter>

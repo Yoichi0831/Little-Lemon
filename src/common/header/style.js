@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import logo from '../../statics/logo.png'
+import logo from '../../statics/little-lemon-logo.png'
 
 
 export const HeaderWrapper = styled.div`
@@ -11,13 +11,16 @@ export const HeaderWrapper = styled.div`
 
 export const Logo = styled.div`
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 100;
+    left: 100;
     display: block;
     width: 100px;
-    height: 58px;
+    height: 80px;
     background: url(${logo});
-    background-size: contain;
+    background-size: contain; /* 保持图片原比例缩放，适应容器 */
+    background-position: center; /* 图片居中 */
+    background-repeat: no-repeat; /* 不重复显示图片 */
+    overflow: hidden; /* 隐藏超出部分 */
 `
 
 export const Nav = styled.div`

@@ -6,38 +6,45 @@ const defaultState = fromJS({
     topicList:
     [{
         id: 1,
-        title: "happy",
-        imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
+        title: "Entree",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
     },
     {
         id: 2,
-        title: "sad",
-        imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
+        title: "Main",
+        imgUrl: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
     },
     {
             id: 3,
-            title: "unforgettable",
-            imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
+            title: "Dessert",
+            imgUrl: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
     },
     {
             id: 4,
-            title: "special day",
-            imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
+            title: "Drink",
+            imgUrl: "https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
     }],
 
     articleList:
     [{
-        id: 1,
-        title: "my special Uni orientation!!",
-        description: "my special orientation day is so happy ",
-        imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
-    },
-    {
-        id: 2,
-        title: "my special primary school orientation!!",
-        description: "my special orientation day is so unforgettable ",
-        imgUrl: "https://www.gravatar.com/avatar/8edccfffaf92d3336a3eedf50fabc952?s=64&d=identicon&r=PG"
-    }],
+        "id": 1,
+        "title": "Pane all’Aglio",
+        "description": "Baked Olive Oil Baguette Bread with Garlic, Herbs, Butter and Mozzarella Cheese",
+        "imgUrl": "https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_744,ar_5:4/v1/img/recipes/51/74/10/yfwIpFc0Qzy24HWqVnVI_garlic%20bread.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Tortiglioni al Ragù di Agnello",
+        "description": "Fresh Tortiglioni Pasta with slow-braised Lamb Shoulder Ragù & Pecorino Romano Cheese",
+        "imgUrl": "https://assets.epicurious.com/photos/56033a277bdffb1205b5d5a1/1:1/w_2560%2Cc_limit/51221430.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Gnocchi Zucchine e Gamberi",
+        "description": "Fresh Potato Gnocchi with Zucchini,Basil and Pistacchio Pesto, Cherry Tomatoes and Prawns",
+        "imgUrl": "https://www.fattoincasadabenedetta.it/wp-content/uploads/2022/07/sito-04-Gnocchetti-crema-di-zucchine-e-gamberetti_copertina.jpg"
+      }
+      ],
     articlePage: 1
 });
 

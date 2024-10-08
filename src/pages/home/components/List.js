@@ -11,8 +11,6 @@ class List extends Component {
             <div>
                 {
                     list.map((item, index) => {
-                        console.log('here11')
-                        console.log('item: ', item)
                         return (
                             <Link key={index} to={'detail/' + item.get('id')}>
                                 <ListItem key={index}>
@@ -21,7 +19,7 @@ class List extends Component {
                                         <h3 className='title'>{item.get('title')}</h3>
                                         <p className="description">{item.get('description')}</p>
                                     </ListInfo>
-                                </ListItem> 
+                                </ListItem>
                             </Link>
 
                         )
